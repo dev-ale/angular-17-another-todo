@@ -1,0 +1,23 @@
+.toolbarNav {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensure items are aligned in the center vertically */
+  padding: 1em; /* Adjusted for less padding, feel free to change as needed */
+  background-color: white;
+  margin-top: 20px;
+}
+
+.toolbarNav > mat-form-field {
+  flex-grow: 1; /* Allows the form field to grow and fill the available space */
+  margin-right: 1em; /* Add some margin between the input and the button */
+}
+
+.toolbarNav > button {
+  /* If you need to adjust the button, do it here */
+  margin-bottom: 30px;
+}

@@ -1,0 +1,27 @@
+.todo-list {
+  width: 30rem;
+  align-content: center;
+  margin-top: 20px;
+  border: 1px dotted #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.content-center {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Use at least 100% of the viewport height */
+  text-align: center; /* Ensure the text inside is centered if it wraps */
+}
+
+/* Optional: Style the paragraph for better visibility/alignment */
+.content-center p {
+  margin: 0; /* Removes default margin from the paragraph */
+}
+
+.filter-toggle {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+}

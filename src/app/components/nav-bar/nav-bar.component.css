@@ -1,0 +1,31 @@
+/* Navbar */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #cd6060;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.tag-pills {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between pills */
+  margin: 0 10px; /* Optional: Add some margin around the pills container */
+}
+
+.tag-pill {
+  background-color: #c15757; /* Light grey background */
+  border-radius: 20px; /* Rounded corners for pill shape */
+  padding: 5px 15px; /* Padding inside each pill */
+  font-size: 0.8rem; /* Font size for the pills */
+  white-space: nowrap; /* Keep the tag text in a single line */
+}

@@ -1,0 +1,37 @@
+.todo-element {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start; /* Adjust alignment to accommodate tags below title */
+  padding: 10px;
+  flex-wrap: wrap; /* Allow elements to wrap */
+}
+
+.todo-content {
+  flex-grow: 1; /* Allow the todo content to take available space */
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap; /* Allow tags to wrap */
+  gap: 5px; /* Space between tags */
+  margin-top: 10px; /* Space between title and tags */
+}
+
+.tag-pill {
+  background-color: #e0e0e0; /* Light grey background */
+  border-radius: 15px; /* Rounded corners for pill shape */
+  padding: 5px 10px; /* Padding inside each tag */
+  font-size: 0.8rem; /* Smaller font size for tags */
+  white-space: nowrap; /* Prevent tags from wrapping */
+}
+
+.todo-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto; /* Ensure actions align to the right */
+}
+
+button[mat-icon-button] {
+  flex-shrink: 0;
+}

@@ -1,0 +1,9 @@
+<mat-toolbar class="nav-bar">
+  <span>{{ title }}</span>
+  <span class="example-spacer"></span>
+  <div class="tag-pills" *ngFor="let tag of allTags$ | async">
+    <span class="tag-pill">{{ tag }}</span>
+  </div>
+  <span class="example-spacer"></span>
+  <span> {{ todosCount$ | async }}</span>
+</mat-toolbar>

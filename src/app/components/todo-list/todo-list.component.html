@@ -1,0 +1,23 @@
+<div class="filter-toggle">
+  <mat-button-toggle-group
+    name="filter"
+    [value]="defaultFilter$ | async"
+    (change)="changeFilter($event)"
+  >
+    <mat-button-toggle *ngFor="let filter of filterOptions" [value]="filter">
+      {{ filter }}
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+
+<div class="todo-list" *ngFor="let todo of todos$ | async">
+  <app-todo [todo]="todo"></app-todo>
+</div>
+<div *ngIf="isLoading$ | async">is Loading...</div>
+<p *ngIf="error$ | async as error">error: {{ error }}</p>
+
+<div class="content-center">
+  <div *ngIf="(todos$ | async)?.length == 0">
+    <p>no todos</p>
+  </div>
+</div>

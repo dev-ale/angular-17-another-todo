@@ -1,0 +1,17 @@
+<div class="todo-element">
+  <div class="todo-content">
+    <h2>{{ todo.todo }}</h2>
+    <div class="tags">
+      <span class="tag-pill" *ngFor="let tag of todo.tags">{{ tag }} </span>
+    </div>
+  </div>
+  <div class="todo-actions">
+    <mat-checkbox
+      [checked]="todo.completed"
+      (change)="toggle(todo, $event)"
+    ></mat-checkbox>
+    <button mat-icon-button color="warn" (click)="delete(todo)">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+</div>

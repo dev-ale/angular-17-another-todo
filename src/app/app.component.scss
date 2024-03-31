@@ -1,0 +1,33 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* Fix the top navbar */
+app-nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures it stays above other content */
+}
+
+/* Fix the bottom input bar */
+app-todo-input {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures it stays above other content */
+}
+
+/* Scrollable main content */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the children horizontally in the container */
+  justify-content: flex-start; /* Aligns children at the start vertically */
+  margin-top: 60px; /* Adjust based on the height of your navbar */
+  margin-bottom: 60px; /* Adjust based on the height of your input bar */
+  overflow-y: auto;
+  height: calc(100% - 140px); /* Adjust the total height based on the nav and input bar */
+  padding: 0 20px; /* Adds some padding on the sides */
+}
