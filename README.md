@@ -1,6 +1,6 @@
-# TodoApp
+# another TodoApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+Simple Todo App that uses local storage for persistance and ngrx for state managment
 
 ## Development server
 
